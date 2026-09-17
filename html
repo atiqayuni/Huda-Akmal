@@ -1,0 +1,222 @@
+<title>Wedding Invitation</title>
+
+<!-- CONNECT CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- COVER -->
+<section class="cover">
+
+    <div class="flower flower-top">
+        🌸 🌷
+        <br>
+        🌺 🌿
+    </div>
+
+    <div class="container">
+
+        <p class="subtitle">
+            WEDDING INVITATION
+        </p>
+
+        <div class="small-flower">
+            ❀
+        </div>
+
+        <h1>Aisyah</h1>
+
+        <div class="and">&</div>
+
+        <h1>Hakim</h1>
+
+        <p class="date">
+            24 · JANUARY · 2026
+        </p>
+
+        <div class="scroll">
+            SCROLL DOWN
+            <br>
+            ↓
+        </div>
+
+    </div>
+
+    <div class="flower flower-bottom">
+        🌷 🌸
+        <br>
+        🌿 🌺
+    </div>
+
+</section>
+
+
+<!-- INVITATION -->
+<section class="invitation">
+
+    <div class="container">
+
+        <div class="decor">
+            ❀
+        </div>
+
+        <h2>With Love</h2>
+
+        <p>
+            Dengan penuh kesyukuran dan rasa bahagia,
+            kami menjemput anda untuk hadir ke majlis
+            perkahwinan kami.
+        </p>
+
+        <br>
+
+        <p>
+            Kehadiran anda amat bermakna
+            buat kami dan keluarga.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DATE -->
+<section class="event">
+
+    <div class="container">
+
+        <div class="decor">
+            🌸
+        </div>
+
+        <h2>Save The Date</h2>
+
+        <div class="date-box">
+
+            <p class="month">
+                JANUARY
+            </p>
+
+            <p class="big-date">
+                24
+            </p>
+
+            <p class="day">
+                SATURDAY
+            </p>
+
+            <p class="time">
+                11:00 AM – 4:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LOCATION -->
+<section class="location">
+
+    <div class="container">
+
+        <div class="decor">
+            🌷
+        </div>
+
+        <h2>Wedding Reception</h2>
+
+        <p>Dewan Seri Mawar</p>
+
+        <p>Kangar, Perlis</p>
+
+        <a href="https://maps.google.com"
+           target="_blank"
+           class="map-button">
+            VIEW LOCATION
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- RSVP -->
+<section class="rsvp">
+
+    <div class="container">
+
+        <div class="decor">
+            ❀
+        </div>
+
+        <h2>RSVP</h2>
+
+        <p>
+            Sila sahkan kehadiran anda.
+        </p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Nama">
+
+        <select id="attendance">
+
+            <option value="">
+                Pilih Kehadiran
+            </option>
+
+            <option value="Hadir">
+                Saya Akan Hadir
+            </option>
+
+            <option value="Tidak Hadir">
+                Tidak Dapat Hadir
+            </option>
+
+        </select>
+
+        <button
+            class="submit"
+            onclick="rsvp()">
+            CONFIRM RSVP
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+    Aisyah & Hakim
+    <br><br>
+    ♡
+</footer>
+
+
+<script>
+
+    function rsvp() {
+
+        let name =
+            document.getElementById("name").value;
+
+        let attendance =
+            document.getElementById("attendance").value;
+
+        if (name === "" || attendance === "") {
+
+            alert("Sila lengkapkan maklumat.");
+
+        } else {
+
+            alert(
+                "Terima kasih " +
+                name +
+                "! RSVP anda telah diterima."
+            );
+
+        }
+
+    }
+
+</script>
